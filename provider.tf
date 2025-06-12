@@ -12,11 +12,11 @@ terraform {
   }
 
   # Optional: Configure remote state backend
-  # backend "s3" {
-  #   bucket = "your-terraform-state-bucket"
-  #   key    = "devops-project/terraform.tfstate"
-  #   region = "us-east-1"
-  # }
+   backend "s3" {
+     bucket = "myterraformprojectnewbucket"
+     key    = "devops-project/terraform.tfstate"
+     region = "eu-north-1"
+   }
 }
 
 provider "aws" {
